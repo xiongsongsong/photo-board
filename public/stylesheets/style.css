@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #383838;
+    background: #383838;
+}
+
+#header {
+    background: #222222; /* Old browsers */
+    background: -moz-linear-gradient(top, #222222 0%, #151515 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #222222), color-stop(100%, #151515)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #222222 0%, #151515 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #222222 0%, #151515 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #222222 0%, #151515 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #222222 0%, #151515 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#222222', endColorstr = '#151515', GradientType = 0); /* IE6-9 */
+    height: 50px;
+    border: solid 1px #000;
+    position: relative;
+    z-index: 2;
+}
+
+#header .search {
+    width: 50px;
+    height: 50px;
+    background: url(../images/search_button.png) center center no-repeat;
+    float: left;
+}
+
+#header h2 {
+    color: #fefefe;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 160%;
+    margin-left: 4em;
+}
+
+#header h2  span {
+    margin: 0 1em;
+}
+
+#sidebar {
+    position: absolute;
+    background: #161616;
+    width: 50px;
+    left: 0;
+    top: 120px;
+    height: 200px;
+    z-index: 2;
+}
+
+#sidebar div.info,
+#sidebar div.category {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+#sidebar div.category {
+    background: #fef5ce;
+    box-shadow: inset 0 0 12px #000;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#wrapper #img {
+    position: absolute;
+    left: 300px;
+    top: 120px;
+}
+
+#pic{
+    vertical-align: top;
+}
+
+a {
+    color: #00B7FF;
+}
+
+#list {
+    position: absolute;
+    left: 0;
+    background: #000;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
